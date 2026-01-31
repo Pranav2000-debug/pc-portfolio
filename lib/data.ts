@@ -127,9 +127,9 @@ export const aboutData = {
   focus: [
     "React & Next.js",
     "Node.js & Express",
+    "Bun + Hono",
     "MongoDB & PostgreSQL",
-    "Docker & AWS EC2",
-    "RESTful APIs",
+    "Docker & AWS",
     "Auth & Session Handling",
     "Performance Optimization",
   ],

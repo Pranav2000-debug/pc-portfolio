@@ -5,7 +5,7 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FlipWords } from "@/components/ui/flip-words";
 
-const roles = ["Full-Stack Developer", "MERN Specialist", "Backend Engineer", "React Developer"];
+const roles = ["Full-Stack Developer", "MERN/Bun-Hono Developer", "Backend Engineer", "React Developer"];
 
 export default function Hero() {
   return (
@@ -68,7 +68,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-muted-foreground max-w-2xl mx-auto mb-8 text-lg">
-          Building scalable, performant web applications with modern JavaScript and TypeScript. Specializing in React, Next.js, Node.js, and cloud
+          Building scalable, performant web applications with modern JavaScript and TypeScript. Specializing in React, Next.js 15+, Node.js, Bun + Hono and familiar with cloud
           technologies.
         </motion.p>
 
