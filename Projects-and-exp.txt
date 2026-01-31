@@ -1,0 +1,45 @@
+read skills from here too and my summary
+Full-stack developer specializing in Nodejs, modern JavaScript and Typescript. Experienced in delivering end-to-end features across React/Next.js
+frontends and Node.js services with emphasis on correctness, performance, and maintainability. Skilled in designing API contracts, authentication and
+authorization workflows, data access layers, and state management. Proficient with both relational and document databases, applying schema design,
+indexing, and efficient querying to real product requirements.
+Tech Focus:
+React • Next.js • Docker • Node.js • Express • MongoDB • Redis • RESTful APIs • Auth & Session Handling • PostgreSQL • Git & GitHub
+Performance Optimization • Problem-Solving
+
+
+Work Experience
+Freelance Developer,
+AOA Society Website
+Feb 2025 - Oct 2025
+Noida, India
+Recognized by the society for contributing to improved transparency and digital accessibility.
+Integrated a payment gateway and dashboard with UCO bank for society payments for various events and registrations.
+Designed workflows for OTP-based verification and secure certificate downloads through a ReactJS frontend.
+Dynamic PDF generation from templates, automatically embedding member details (name, flat number, etc.).
+
+
+Projects
+Debatrium
+Online Debating Platform (ongoing)
+Designed and implemented a backend-centric MERN SaaS platform supporting secure PDF ingestion and LLM-driven debate analysis pipelines,
+including argument classification, counter-argument generation, scoring, and structured outputs.
+Built a production-grade authentication and API security layer using Zod, JWT with HttpOnly cookies, refresh-token rotation, RBAC, requestscoped rate limiting, and MongoDB injection hardening.
+Optimized backend performance and AI throughput via token-aware document chunking, async job orchestration with Inngest, content-hash
+deduplication, and compound indexed queries—reducing response latency and inference cost.
+Deployed and operated a containerized backend architecture using Docker, NGINX reverse proxying, and CI/CD pipelines, with planned Redisbacked caching, queues, and real-time AI voice interactions using Vapi.
+
+Pair Code 
+Collaborative Coding Interview Platform
+Built a real-time coding interview platform featuring a VSCode-powered code editor, 1-on-1 video rooms and live chat using Stream.io
+Implemented secure authentication with Clerk, room locking (2 participants only), and isolated code execution with automated test-case–based
+feedback (pass/fail).
+Designed a dashboard with live stats and a solo practice mode, using TanStack Query for efficient data fetching and caching.
+Integrated background jobs with Inngest, maintained a Node.js & Express REST API, followed GitHub PR workflows, and deployed on Render
+and Netlify
+
+
+Certifcations
+JavaScript Certification — Udemy (2024)
+MERN Stack Development — Offline Course at GeekForGeeks (May 2025 - August-2025)
+Next.js Certifieation — Udemy (2025)
