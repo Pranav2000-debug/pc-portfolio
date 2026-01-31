@@ -2,15 +2,15 @@
 export const skillsData = {
   languages: {
     title: "Languages",
-    skills: ["JavaScript", "TypeScript"],
+    skills: ["JavaScript", "TypeScript", "Python"],
   },
   frontend: {
     title: "Frontend",
-    skills: ["React", "Next.js"],
+    skills: ["React", "Next.js", "HTML", "CSS", "Tailwind CSS"],
   },
   backend: {
     title: "Backend",
-    skills: ["Node.js", "Express", "Hono"],
+    skills: ["Node", "Express", "Hono", "Bun"],
   },
   databases: {
     title: "Databases",
@@ -22,7 +22,7 @@ export const skillsData = {
   },
   devops: {
     title: "DevOps & Tools",
-    skills: ["Docker", "AWS EC2", "Git", "GitHub"],
+    skills: ["Docker", "AWS EC2", "Git", "GitHub", "AWS S3", "Vercel", "Render"],
   },
 };
 
@@ -49,15 +49,17 @@ export const projectsData = [
     subtitle: "Online Debating Platform",
     status: "ongoing",
     description:
-      "Backend-centric MERN SaaS platform supporting secure PDF ingestion and LLM-driven debate analysis pipelines, including argument classification, counter-argument generation, scoring, and structured outputs.",
+      "Backend-centric MERN platform supporting secure PDF ingestion and LLM-driven debate analysis pipelines, counter-argument generation, scoring, and structured outputs.",
     highlights: [
       "Production-grade authentication with JWT, HttpOnly cookies, refresh-token rotation, RBAC",
-      "Token-aware document chunking, async job orchestration with Inngest",
+      "Secure file upload and storage with Cloudinary",
+      "Token-aware document chunking, async job orchestration with BullMQ",
       "Containerized backend with Docker, NGINX reverse proxying, and CI/CD pipelines",
+      "Schema validation with Zod",
     ],
-    techStack: ["React", "Node.js", "Express", "MongoDB", "Docker", "NGINX", "Inngest"],
+    techStack: ["React", "BullMQ", "Redis", "Node.js", "Express", "MongoDB", "Docker", "NGINX", "Zod", "Cloudinary"],
     liveUrl: "", // To be filled
-    githubUrl: "https://github.com/Pranav2000-debug/Debatrium", // To be filled
+    githubUrl: "https://github.com/Pranav2000-debug/Debatrium",
     image: "/images/projects/debatrium.png",
   },
   {
@@ -70,9 +72,9 @@ export const projectsData = [
       "Isolated code execution with automated test-case–based feedback",
       "Dashboard with live stats and solo practice mode using TanStack Query",
     ],
-    techStack: ["React", "Node.js", "Express", "Stream.io", "Clerk", "TanStack Query"],
-    liveUrl: "https://apex-talent.netlify.app/", // To be filled
-    githubUrl: "https://github.com/Pranav2000-debug/apex-talent", // To be filled
+    techStack: ["React", "Node.js", "Express", "Stream.io", "MongoDB", "Clerk", "TanStack Query"],
+    liveUrl: "https://apex-talent.netlify.app/",
+    githubUrl: "https://github.com/Pranav2000-debug/apex-talent",
     image: "/images/projects/paircode.png",
   },
   {
@@ -100,13 +102,13 @@ export const certificationsData = [
     title: "JavaScript Certification",
     issuer: "Udemy",
     year: "2024",
-    credentialUrl: "https://www.udemy.com/certificate/UC-0effa002-b38a-4314-bca5-2f80106f1867/", // To be filled
+    credentialUrl: "https://www.udemy.com/certificate/UC-0effa002-b38a-4314-bca5-2f80106f1867/",
   },
   {
     title: "MERN Stack Development",
     issuer: "GeekForGeeks (Offline Course)",
     year: "May 2025 - August 2025",
-    credentialUrl: "https://media.geeksforgeeks.org/courses/certificates/914d31e6fc4877e4e818c3be791aca84.pdf", // To be filled
+    credentialUrl: "https://media.geeksforgeeks.org/courses/certificates/914d31e6fc4877e4e818c3be791aca84.pdf",
   },
 ];
 
