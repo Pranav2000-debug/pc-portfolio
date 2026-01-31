@@ -9,7 +9,7 @@ export const LoaderOne = () => {
       repeat: Infinity,
       repeatType: "loop" as const,
       delay: x * 0.2,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
     };
   };
   return (
@@ -55,7 +55,7 @@ export const LoaderTwo = () => {
       repeat: Infinity,
       repeatType: "loop" as const,
       delay: x * 0.2,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
     };
   };
   return (
@@ -106,17 +106,16 @@ export const LoaderThree = () => {
       strokeWidth="1"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-20 w-20 stroke-neutral-500 [--fill-final:var(--color-yellow-300)] [--fill-initial:var(--color-neutral-50)] dark:stroke-neutral-100 dark:[--fill-final:var(--color-yellow-500)] dark:[--fill-initial:var(--color-neutral-800)]"
-    >
+      className="h-20 w-20 stroke-neutral-500 [--fill-final:var(--color-yellow-300)] [--fill-initial:var(--color-neutral-50)] dark:stroke-neutral-100 dark:[--fill-final:var(--color-yellow-500)] dark:[--fill-initial:var(--color-neutral-800)]">
       <motion.path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <motion.path
         initial={{ pathLength: 0, fill: "var(--fill-initial)" }}
         animate={{ pathLength: 1, fill: "var(--fill-final)" }}
         transition={{
           duration: 2,
-          ease: "easeInOut",
+          ease: "easeInOut" as const,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: "reverse" as const,
         }}
         d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11"
       />
@@ -129,19 +128,18 @@ export const LoaderFour = ({ text = "Loading..." }: { text?: string }) => {
     <div className="relative font-bold text-black [perspective:1000px] dark:text-white">
       <motion.span
         animate={{
-          skew: [0, -40, 0],
+          skewX: [0, -40, 0],
           scaleX: [1, 2, 1],
         }}
         transition={{
           duration: 0.05,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: "reverse" as const,
           repeatDelay: 2,
-          ease: "linear",
+          ease: "linear" as const,
           times: [0, 0.2, 0.5, 0.8, 1],
         }}
-        className="relative z-20 inline-block"
-      >
+        className="relative z-20 inline-block">
         {text}
       </motion.span>
       <motion.span
@@ -154,11 +152,10 @@ export const LoaderFour = ({ text = "Loading..." }: { text?: string }) => {
         transition={{
           duration: 0.5,
           repeat: Infinity,
-          repeatType: "reverse",
-          ease: "linear",
+          repeatType: "reverse" as const,
+          ease: "linear" as const,
           times: [0, 0.2, 0.5, 0.8, 1],
-        }}
-      >
+        }}>
         {text}
       </motion.span>
       <motion.span
@@ -171,11 +168,10 @@ export const LoaderFour = ({ text = "Loading..." }: { text?: string }) => {
         transition={{
           duration: 0.8,
           repeat: Infinity,
-          repeatType: "reverse",
-          ease: "linear",
+          repeatType: "reverse" as const,
+          ease: "linear" as const,
           times: [0, 0.3, 0.6, 0.8, 1],
-        }}
-      >
+        }}>
         {text}
       </motion.span>
     </div>
@@ -192,22 +188,17 @@ export const LoaderFive = ({ text }: { text: string }) => {
           initial={{ scale: 1, opacity: 0.5 }}
           animate={{
             scale: [1, 1.1, 1],
-            textShadow: [
-              "0 0 0 var(--shadow-color)",
-              "0 0 1px var(--shadow-color)",
-              "0 0 0 var(--shadow-color)",
-            ],
+            textShadow: ["0 0 0 var(--shadow-color)", "0 0 1px var(--shadow-color)", "0 0 0 var(--shadow-color)"],
             opacity: [0.5, 1, 0.5],
           }}
           transition={{
             duration: 0.5,
             repeat: Infinity,
-            repeatType: "loop",
+            repeatType: "loop" as const,
             delay: i * 0.05,
-            ease: "easeInOut",
+            ease: "easeInOut" as const,
             repeatDelay: 2,
-          }}
-        >
+          }}>
           {char === " " ? "\u00A0" : char}
         </motion.span>
       ))}
